@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1 portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="buttons">
+            <div class="left">Saumya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <button><li><a href="/">HOME</a></li></button>
+                   <button> <li><a href="#about">ABOUT</a></li></button> <!-- Updated link -->
+                  
+                 <button>   <a href="#projects">PROJECTS</a></button>
+                 <button>   <a href="#resume">RESUME</a></button>
+                 <button> <li><a href="#contacts">CONTACT ME</a></li></button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="about"> <!-- Added id attribute -->
+        <div class="about">
+            <img src="image.jpg" alt="About me image">
+            <h1>ABOUT ME</h1>
+            <h1>SAUMYA SHARMA</h1>
+            <h2>B.Tech CS student FRONTEND WEB DEVELOPER ASPIRANT AND DSA IN C</h2>
+            <p class="clamp-lines">Hello! I'm <B>Saumya Sharma</B>, a passionate Computer Science student with a keen interest in full stack web development. Currently pursuing my degree at Dr. A.P.J. Abdul Kalam Technical University, I am dedicated to mastering both front-end and back-end technologies to create dynamic, user-friendly web applications. With a solid foundation in computer science principles and hands-on experience in various programming languages, I am continuously expanding my skill set. I enjoy tackling complex problems, learning new tools, and applying my knowledge to build functional and aesthetically pleasing web solutions. Some of the technologies I work with include HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I thrive on coding, debugging, and optimizing web applications, and I am always eager to take on new challenges that push my limits.</p>
+        </div>
+    </section>
+    <section id="projects" class="project"> 
+        <h1>Projects</h1>
+        <div class="calculator">
+        <img src="cal.jpg" alt="" srcset="">
+        <p>This is a calculator made using HTML, CSS, and JavaScript. It features:
+            <ul>
+                <li>Basic arithmetic operations: addition, subtraction, multiplication, and division.</li>
+                <li>A user-friendly interface with responsive design.</li>
+                <li>Error handling for invalid inputs and operations.</li>
+             
+            </ul>
+           
+        </p>
+        </div>
+        <div class="netflix">
+            <img src="netflix.png" alt="" srcset="">
+            <p>This is a Netflix clone project made using HTML, CSS, and JavaScript. The project includes:
+                <ul>
+                    <li>A responsive user interface that mimics the look and feel of Netflix, providing a smooth user experience across different devices.</li>
+                    <li>A homepage showcasing various movie and TV show categories with horizontally scrollable lists.</li>
+                    
+                </ul>
+            </p>
+        </div>
+        <div class="spotify">
+            <img src="spotify.png" alt="" srcset="">
+            <p>This is a Spotify clone project made using HTML, CSS, and JavaScript. The project features:
+                <ul>
+                    <li>A user interface that closely resembles the Spotify web app, offering a familiar and intuitive user experience.</li>
+                    <li>A music player with play, pause, skip, and volume control functionalities.</li>
+                    
+                </ul>
+              
+            </p>
+
+        </div>
+    </section>  
+    <section id="contacts" class="contact">
+        <div class="name">
+         
+                <h1>CONTACT ME</h1>
+                <form action="/submit_form" method="post">
+                    <!-- Text input -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    
+                    <!-- Email input -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    
+                    <!-- Password input -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br><br>
+                    
+                    <!-- Radio buttons -->
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    <br><br>
+                    
+                  
+                    
+                    <!-- Dropdown menu -->
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">United States</option>
+                        <option value="canada">India</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                    <br><br>
+                    
+                    <!-- Submit button -->
+                    <input type="submit" value="Submit">
+                </form>
+
+        </div>
+    </section>
+    <section id="resume" class="resume">
+        <h1>RESUME</h1>
+        <BUTTON>DOWNLOAD RESUME</BUTTON>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>SAUMYA PORTFOLIO'S</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PROJECTS</li>
+                    <li>RESUME</li>
+                    <LI>CONTACT ME</LI>
+
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PROJECTS</li>
+                    <li>RESUME</li>
+                    <LI>CONTACT ME</LI>
+
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PROJECTS</li>
+                    <li>RESUME</li>
+                    <LI>CONTACT ME</LI>
+
+                </ul>
+            </div>
+        </div>
+        <div class="textcenter">
+            Copyright:&#169; www.saumyaportfolio.com | All rights reversed
+        </div>
+    </footer>
+</body>
+
+</html>

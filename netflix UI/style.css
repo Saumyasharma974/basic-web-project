@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+    background-color: black;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    background-image: url("assets/bg.jpg");
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* Updated for better mobile compatibility */
+}
+
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+
+nav {
+    width: 100%;
+    max-width: 1400px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 140px;
+    box-sizing: border-box;
+}
+
+span img {
+    height: 123px;
+    width: 123px;
+    position: relative;
+    z-index: 10;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+}
+
+.btn1 {
+    width: 120px;
+    height: 35px;
+    padding: 6px 35px;
+    background-color: transparent;
+    color: beige;
+    font-weight: bold;
+    border: 2px solid beige;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn1::after {
+    content: "\25BC";
+    font-size: 10px;
+    margin-left: 10px;
+    color: beige;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.btn1:hover .dropdown-content {
+    display: block;
+}
+
+.btn2 {
+    width: 75px;
+    height: 35px;
+    background-color: red;
+    color: beige;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: none;
+}
+
+.hero {
+    height: 100%;
+    /* Updated to take full height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    gap: 20px;
+    padding: 30px;
+    margin: 0;
+    /* Removed margin */
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Added for wrapping on small screens */
+}
+
+input {
+    height: 50px;
+    width: 350px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(64, 56, 56);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.btn3 {
+    height: 50px;
+    width: 210px;
+    background-color: red;
+    color: beige;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seperation {
+    height: 5px;
+    background-color: rgb(15, 14, 14);
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        padding: 0 80px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        padding: 0 40px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 90px;
+        height: 35px;
+    }
+
+    .hero> :nth-child(1),
+    .hero> :nth-child(2) {
+        font-size: 36px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 20px;
+    }
+
+    .hero> :nth-child(4) {
+        font-size: 18px;
+    }
+
+    input {
+        width: 300px;
+    }
+
+    .btn3 {
+        width: 180px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    span img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .hero> :nth-child(1),
+    .hero> :nth-child(2) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(4) {
+        font-size: 16px;
+    }
+
+    input {
+        width: 250px;
+        height: 45px;
+    }
+
+    .btn3 {
+        width: 160px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+        font-size: 14px;
+        padding: 6px 20px;
+    }
+
+    .btn3 {
+        width: 100%;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    input {
+        width: 100%;
+        height: 45px;
+    }
+
+    .hero> :nth-child(1),
+    .hero> :nth-child(2) {
+        font-size: 28px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 16px;
+    }
+
+    .hero> :nth-child(4) {
+        font-size: 14px;
+    }
+
+    .input-btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .hero> :nth-child(1),
+    .hero> :nth-child(2) {
+        font-size: 24px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .hero> :nth-child(4) {
+        font-size: 12px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+    }
+
+    .btn3 {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+    overflow: hidden;
+}
+
+.secImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    padding-top: 12px;
+}
+
+.secImg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 32px;
+    padding: 14px 0;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 22px;
+    padding: 12px 0;
+}
+
+section.first>div :nth-child(3) {
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+section.first>div :nth-child(4) {
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+section.first>div :nth-child(5) {
+    font-size: 16px;
+    padding: 14px 0;
+}
+
+/* Ensure .seperation is attached to the background of .main */
+.main {
+    position: relative;
+}
+
+/* Ensure .seperation is positioned correctly */
+.seperation {
+    height: 5px;
+    background-color: rgb(15, 14, 14);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adjust .secImg and video to prevent overlap */
+.secImg {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    /* Add margin to prevent overlap with .seperation */
+}
+
+.secImg img {
+    width: 103%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 10;
+    padding-top: 12px;
+}
+
+.secImg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.separation {
+    height: 5px;
+    background-color: rgb(15, 14, 14);
+    margin: 0 auto;
+    width: 100%;
+    /* Ensures the separation line spans the full width of its container */
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item {
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn2 a{
+    color: white;
+    text-decoration: none;
+
+}

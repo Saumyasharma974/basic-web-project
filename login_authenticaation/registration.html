@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <header class="registration-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="">saumya</a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="link"><a href="index.html">Home</a></li>
+                    <li class="link"><a href="about.html">About</a></li>
+                    <li class="link"><a href="registration.html">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="user-container login-section--display">
+                <div class="registration">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                            <h2>Hello, Friends</h2>
+                            <p>Enter your personal details and start your journey with us</p>
+                            <button class="login-btn">Login here</button>
+                        </div>
+
+                        <div class="login-form">
+                            <h2>Create Account</h2>
+                            <div class="social-icons">
+                                <a href="# "></a>
+                                <i class="fa-brands fa-discord"></i>
+                                <a href="# "></a>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <a href="# "></a>
+                                <i class="fa-brands fa-instagram"></i>
+                                <a href="# "></a>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <p>or use your emails for registration</p>
+                            <form action="#">
+                                <div class="input-field">
+                                    <label for="username">
+                                        <input type="text" name="#" id="username" placeholder="Name"></label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="Email">
+                                        <input type="email" name="#" id="Email" placeholder="Email"></label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="password"><input type="password" name="#" id="password"
+                                            placeholder="Password"></label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="Submit"><input type="submit" name="#" id="Submit" placeholder="submit">
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                            <h2>Welcome back!</h2>
+                            <p>To keep connected with us please login with yourself</p>
+                            <button class="registration-btn">Register here</button>
+                        </div>
+
+                        <div class="registration-form">
+                            <h2>Sign in</h2>
+                            <div class="social-icons">
+                                <a href="# "></a>
+                                <i class="fa-brands fa-discord"></i>
+                                <a href="# "></a>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <a href="# "></a>
+                                <i class="fa-brands fa-instagram"></i>
+                                <a href="# "></a>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <p>or use your accounts</p>
+                            <form id="login-form">
+                                <div class="input-field">
+                                    <label for="Email1">
+                                        <input type="email" name="#" id="Email1" placeholder="Email"></label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="Password1"><input type="password" name="#" id="Password1"
+                                            placeholder="Password"></label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="Submit"><input type="submit" value="Login" name="#" id="Submit"
+                                            placeholder="submit">
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </header>
+    <script>
+        const user_con = document.querySelector('.user-container');
+        const regis_btn = document.querySelector('.registration-btn');
+        const login_btn = document.querySelector('.login-btn');
+
+        regis_btn.addEventListener('click', () => {
+            user_con.classList.add('login-section--display');
+
+        })
+        login_btn.addEventListener('click', () => {
+            user_con.classList.remove('login-section--display');
+        })
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form fields
+            const email = document.getElementById('Email1');
+            const password = document.getElementById('Password1');
+
+            // Check if email and password fields are empty
+            if (email.value.trim() === '') {
+                alert("Email cannot be blank.");
+                email.focus();
+                return;
+            }
+
+            if (password.value.trim() === '') {
+                alert("Password cannot be blank.");
+                password.focus();
+                return;
+            }
+
+            // If all validations pass, submit the form
+            alert("Login successful!");
+            this.submit(); // Use this line to submit the form after validation
+        });
+
+    </script>
+</body>
+
+</html>

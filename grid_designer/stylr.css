@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    /* Remove default margin */
+    height: 100vh;
+    /* Ensure body takes up the full viewport height */
+    background-image: linear-gradient(to right, #ffcccc, #ffe1a8);
+    font-family: Arial, sans-serif;
+    /* Set a default font */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 10px;
+    padding-top: 50px;
+
+}
+
+.mybutton2 {
+    background-color: rgb(32, 131, 173);
+    color: white;
+    border-style: none;
+}
+
+.mybutton1 {
+    background-color: rgb(66, 180, 17);
+    color: white;
+    border-style: none;
+}
+
+.box button {
+    margin-top: 50px;
+    
+    
+}
+
+h2 {
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+}
+
+.box1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+button {
+    border-radius: 50px;
+    height: 45px;
+    width: 100px;
+}
+
+.copycode {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    height: 100px;
+    width: 350px;
+    border: #ffcccc;
+    border-radius: 20px;
+    border-style: none solid;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+}

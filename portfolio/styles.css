@@ -1,0 +1,373 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding: 1em 0;
+    height: 120px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
+    color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+
+    z-index: 1000;
+}
+
+nav+section {
+    padding-top: 150px;
+
+}
+
+nav .left {
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+
+
+}
+
+nav .right ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .right ul li a {
+    color: rgb(123, 21, 240);
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+
+    background-image: radial-gradient(circle, #000000, #181014, #261a24, #312438, #36314e, #3a4469, #365a83, #28709c, #1992ba, #11b5d2, #31d8e5, #5ffbf1);
+    min-height: 60vh;
+
+}
+
+.about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    background-image: linear-gradient(to left top, #ffffff, #ececef, #dbd9de, #c9c6ce, #b9b3bd);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+
+.about p {
+    margin-top: 20px;
+
+    max-width: 600px;
+
+    text-align: justify;
+
+    -webkit-line-clamp: 3;
+}
+
+.about h2 {
+    font-size: 15px;
+}
+
+.clamp-lines {
+    height: calc(1.5em * 7);
+
+    overflow: hidden;
+}
+
+.project {
+    background-color: rgb(39, 138, 138);
+    gap: 205px;
+    flex-direction: column;
+
+}
+
+
+.project h1 {
+    text-align: center;
+    margin-top: 0;
+
+    padding-top: 20px;
+
+}
+
+
+.project div {
+    border: 2px solid black;
+    border-style: none;
+
+    padding: 20px;
+    /* Padding inside the div */
+    margin: 20px auto;
+    /* Center the div and add margin */
+    border-radius: 5px;
+    /* Optional: Add rounded corners */
+    background-color: #d6d3ec;
+    /* Optional: Add background color */
+    height: 300px;
+    width: 400px;
+    /* Ensure the div width fits within the container */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the width */
+}
+
+.calculator {
+    text-align: center;
+    /* Center the content inside the div */
+    margin-top: 20px;
+    /* Add margin from the top */
+}
+
+/* Style for the image inside .calculator */
+.calculator img {
+    width: 100px;
+    /* Ensure the image fits within the div */
+    height: 100px;
+    /* Maintain the aspect ratio */
+    margin-top: 5px;
+    /* Add some margin from the top */
+}
+
+/* Style for the description paragraph inside .calculator */
+.calculator p {
+    margin-top: 10px;
+    /* Add margin above the paragraph */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+}
+
+/*.project .calculator {
+    text-align: center; /* Center the content inside the div
+    margin-top: -100px; /* Reduced margin from the top 
+}*/
+.project .netflix,
+.project .spotify,
+.project .calculator {
+    margin-top: -100px;
+    /* Reduced margin from the top for the subsequent divs */
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.netflix {
+    text-align: center;
+    /* Center the content inside the div */
+    margin-top: 20px;
+    /* Add margin from the top */
+}
+
+/* Style for the image inside .calculator */
+.netflix img {
+    width: 100px;
+    /* Ensure the image fits within the div */
+    height: 100px;
+    /* Maintain the aspect ratio */
+    margin-top: 5px;
+    /* Add some margin from the top */
+}
+
+/* Style for the description paragraph inside .calculator */
+.netflix p {
+    margin-top: 10px;
+    /* Add margin above the paragraph */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+}
+
+.spotify {
+    text-align: center;
+    /* Center the content inside the div */
+    margin-top: 20px;
+    /* Add margin from the top */
+}
+
+/* Style for the image inside .calculator */
+.spotify img {
+    width: 100px;
+    /* Ensure the image fits within the div */
+    height: 100px;
+    /* Maintain the aspect ratio */
+    margin-top: 5px;
+    /* Add some margin from the top */
+}
+
+/* Style for the description paragraph inside .calculator */
+.spotify p {
+    margin-top: 10px;
+    /* Add margin above the paragraph */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+}
+
+.buttons button {
+    padding: 3px 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #a7a7a7;
+    border: 0;
+}
+
+.contact {
+    background-image: linear-gradient(to right top, #f5f3f4, #f1eff1, #edebee, #e8e7ec, #e2e3e9, #dcdfe5, #d5dae1, #cfd6dc, #c7d0d5, #bfcacd, #b8c4c5, #b1bebd);
+}
+
+.name {
+    border: 2px solid black;
+    border-style: none;
+}
+
+.name h1 {
+    padding-bottom: 10px;
+}
+
+.contact {
+
+    max-width: 600px;
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="password"],
+.contact select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact input[type="radio"],
+.contact input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.contact input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.resume {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+}
+
+.resume h1 {
+    margin-top: -20px;
+}
+
+.resume button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: white;
+    /* Set background color to white */
+    border-radius: 125px;
+    /* Make button border circular from all sides */
+    border: none;
+    /* Remove border */
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(50, 25, 50);
+    height: 220px;
+    margin-top: 40px;
+}
+
+.footer {
+    display: flex;
+    padding: 25px 150px;
+    justify-content: space-evenly;
+}
+
+.footer li {
+    list-style: none;
+    font-size: 1rem;
+    color: #6e8a8f;
+}
+
+.footer .first h3 {
+    color: white;
+}
+
+.footer>div {
+    width: 100px;
+}
+
+footer .textcenter {
+    text-align: center;
+    color: gray;
+}
